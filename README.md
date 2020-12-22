@@ -2,6 +2,8 @@
 
 Минимальная верстка для плеера
 
+[Демо версия плеера](https://sanchos2.github.io/dvmn_layout_5/)
+
 ![max example](screenshots/player.png)
 
 Построен на базе библиотеки [Playable](https://wix.github.io/playable/).
@@ -49,6 +51,7 @@ JS код поставляется в виде одного файла `player.j
 **Скрипт `player.js` нужно подключать строго после `<div>` с указанным elementId**
 
 ## Как подключить кнопки
+
 
 **Внутри элемента с указанным `elementId` плеер ищет теги с классами:**
 

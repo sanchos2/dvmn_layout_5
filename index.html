@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link rel="shortcut icon" href="static/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="static/css/font-awesome.min.css">
   <style type="text/css">
-    .main-container {
+    .player-container {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
@@ -13,18 +14,18 @@
         height: 600px;
         box-shadow: 0px 0px 20px rgba(20, 20, 20, 1);
     }
-    .video-container {
+    .player-video-container {
         flex-grow: 3;
     }
-    .button-container {
+    .player-buttons-container {
         background: black;
         flex-wrap: wrap;
 
     }
-    .button-element {
+    .player-group-of-buttons {
         display: inline-block;
     }
-    .button {
+    .player-control-button {
         border-style: none;
         color: white;
         background-color: transparent;
@@ -36,19 +37,19 @@
   </style>
 </head>
 <body>
-  <div id="player" class="main-container">
-    <div class="js-video-container video-container"></div>
-    <div class="button-container">
-      <div class="button-element">
-        <div class="button js-play-button"><i class="fa fa-play" aria-hidden="true"></i></div>
-        <div class="button js-pause-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></div>
+  <div id="player" class="player-container">
+    <div class="js-video-container player-video-container"></div>
+    <div class="player-buttons-container">
+      <div class="player-group-of-buttons">
+        <div class="player-control-button js-play-button"><i class="fa fa-play" aria-hidden="true"></i></div>
+        <div class="player-control-button js-pause-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></div>
       </div>
-      <div class="button-element">
-        <div class="button js-volume-button"><i class="fa fa-volume-up" aria-hidden="true"></i></div>
-        <div class="button js-mute-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i></div>
+      <div class="player-group-of-buttons">
+        <div class="player-control-button js-volume-button"><i class="fa fa-volume-up" aria-hidden="true"></i></div>
+        <div class="player-control-button js-mute-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i></div>
       </div>
-      <div class="button-element" style="float: right">
-        <div class="button js-fullscreen-button fa fa-expand"></div>
+      <div class="player-group-of-buttons" style="float: right">
+        <div class="player-control-button js-fullscreen-button fa fa-expand"></div>
       </div>
     </div>
   </div>
